@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
 
 import {
   BrowserRouter as Router,
@@ -9,7 +9,10 @@ import {
   Link
 } from "react-router-dom";
 
+
 const App = () => {
+  const as = getList();
+  console.log(as);
   return (
     <Router>
       <div>
@@ -34,6 +37,19 @@ const App = () => {
       </div>
     </Router>
   );
+}
+
+const getList = async () =>{
+  try {
+    const res = await axios.get(`http://api-search.cuponatic.com/get?c=Santiago&categoria=Belleza&n=60`, {
+      headers: {
+        'Content-Type': null
+      }
+    });
+    return res;
+  } catch (error) {
+     console.log(error);
+  }
 }
 
 const Home = () => {

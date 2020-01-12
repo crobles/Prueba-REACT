@@ -16,3 +16,4 @@
 
     1. Al clonar el ropositorio a tu local, debes ejecutar el comando "npm i" en la termminal,
     para que se instalen todas las dependencias necesarias.
+    2. Ejecutar el comando "npm start" en la terminal para levantar la aplicación.
