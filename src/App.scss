@@ -1,0 +1,73 @@
+.contentList{
+  margin:0 auto 0 auto; width:900px; 
+  margin-left: 10px;;
+
+  .contentProd{
+    width: 270px;
+    height: 220px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-style: groove;
+
+    .image{
+      padding-top: 5px;
+      text-align: center;
+      img{
+        width:150px;
+        height:120px;
+      }
+    }
+    
+    .attrs{
+      width: 125px;
+      height: 35px;
+      float: left;
+      padding: 5px;
+    }
+
+    .tittle{
+      font-size: 10px;
+      text-align: left;
+    }
+
+    .rate{
+      font-size: 10px;
+      text-align: center;
+    }
+
+    .off{
+      font-size: 10px;
+      text-align: left;
+    }
+
+    .dist{
+      font-size: 10px;
+      text-align: center;
+    }
+
+    .addButton{
+      text-align: center;
+    }
+
+  }
+
+}
+
+.floatCart{
+  margin-left: 75%;
+  position: fixed;
+  min-height: 120px;
+  max-height: 280px;
+  width: 272px;
+  text-align: center;
+  word-wrap: break-word;
+  border-style: groove;
+
+
+  .listProdNav{
+    overflow-y: scroll;
+    width: 270px;
+    max-height: 200px;
+  }
+}
